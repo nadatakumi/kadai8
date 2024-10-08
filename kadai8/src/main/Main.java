@@ -11,7 +11,8 @@ public class Main {
         String name = scanner.nextLine();
 
         // Subクラスのインスタンスを作成し、名前を渡す
-        Sub character = new Sub(name);
+        Sub character = new Sub();
+        character.setName(name); // 名前をセット
 
         // 挨拶とキャラクターのステータスを出力
         System.out.println("こんにちは 「 " + character.getName() + " 」 さん");

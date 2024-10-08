@@ -10,9 +10,8 @@ public class Sub {
     private int speed;
     private int defense;
 
-    // コンストラクタ
-    public Sub(String name) {
-        this.name = name;
+    // コンストラクタでランダムなステータスを生成
+    public Sub() {
         generateRandomStatus();
     }
 
@@ -49,5 +48,30 @@ public class Sub {
 
     public int getDefense() {
         return defense;
+    }
+
+    // Setterメソッド
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public void setMp(int mp) {
+        this.mp = mp;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
     }
 }
